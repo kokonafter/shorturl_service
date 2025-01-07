@@ -47,8 +47,6 @@ Redoc: http://127.0.0.1:8000/redoc
   | POST   | `/shorten`          | Создать короткую ссылку        |
   | GET    | `/{short_id}`       | Редирект по короткой ссылке    |
   | GET    | `/stats/{short_id}` | Получить статистику по ссылке  |
-  | PUT    | `/items/{item_id}`  | Обновить задачу по ID          |
-  | DELETE | `/items/{item_id}`  | Удалить задачу                 |
 
 
 
@@ -72,9 +70,9 @@ POST /shorten
 ## Структура проекта
  ```bash
 shorturl_app/
-├── main.py         # Основной файл приложения
-├── models.py       # Модели базы данных
-├── database.py     # Конфигурация базы данных
-├── requirements.txt # Зависимости проекта
-├── Dockerfile      # Конфигурация Docker
-└── data/           # Данные SQLite
+├── main.py           # Основной файл приложения
+├── models.py         # Модели базы данных
+├── database.py       # Конфигурация базы данных
+├── requirements.txt  # Зависимости проекта
+├── Dockerfile        # Конфигурация Docker
+└── data/             # Данные SQLite
